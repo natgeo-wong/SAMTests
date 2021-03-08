@@ -4,10 +4,11 @@ caseid ='SAMTests',
 
 dx = 500.,
 dy = 500.,
-dt = 10.,
+dt = 5.,
 
 nrestart      = 0,
 nrestart_skip = 23,
+ncycle_max    = 8,
 perturb_type  = 0,
 
 CEM   = .true.,
@@ -58,9 +59,9 @@ doisccp = .false.,
 domodis = .false.,
 domisr  = .false.,
 
-nstop    = 86400,
+nstop    = 172800,
 nprint   = 8640,
-nstat    = 360,    ! Calculate statistics every hour!
+nstat    = 720,    ! Calculate statistics every hour!
 nstatfrq = 60,     ! Collect 60 samples per statistical calculation (every 1 minute)
 
 doSAMconditionals     = .false.,
